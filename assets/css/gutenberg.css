@@ -1,0 +1,25 @@
+/**
+ * Editor Blocks Gutenberg CSS
+ *
+ * @package     editor-blocks
+ * @copyright   Copyright (c) 2018, Danny Cooper
+ * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
+*/
+
+@media screen and ( min-width: 768px ) {
+    .edit-post-visual-editor .editor-post-title,
+    .edit-post-visual-editor .editor-block-list__block {
+	max-width:	1100px;
+    }
+}
+
+.edit-post-visual-editor .editor-block-list__block[data-align="wide"] {
+	max-width: 1300px;
+}
+
+.editor-post-title__block .editor-post-title__input,
+.edit-post-visual-editor,
+.edit-post-visual-editor input[type=text].editor-default-block-appender__content,
+.edit-post-visual-editor p {
+	font-family: 'Source Sans Pro'
+}

@@ -1,0 +1,13 @@
+/**
+ * Editor Blocks TinyMCE CSS
+ *
+ * @package     editor-blocks
+ * @copyright   Copyright (c) 2018, Danny Cooper
+ * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    color: #2d2e33;
+		line-height: 1.25
+}
