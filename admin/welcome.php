@@ -142,7 +142,7 @@ class Editor_Blocks_Theme_Welcome {
 
 						<h3><?php esc_html_e( 'What is Gutenberg?', 'editor-blocks' ); ?></h3>
 
-						<p><?php esc_html_e( 'Gutenberg is WordPress\' next evolution of the text editor. In Gutenberg, content is divided into ‘Blocks’. A block can be a paragraph, an image, a video or anything else you can imagine. Blocks can be arranged using the drag and drop interface.', 'editor-blocks' ); ?></p>
+						<p><?php esc_html_e( 'Gutenberg is WordPress\' next evolution of the text editor. In Gutenberg, content is divided into \'Blocks\'. A block can be a paragraph, an image, a video or anything else you can imagine. Blocks can be arranged using the drag and drop interface.', 'editor-blocks' ); ?></p>
 
 						<p><?php esc_html_e( 'By default Gutenberg comes packaged with 20 essential blocks, these include headings, audio, video quotes, lists, tables, custom HTML and more.', 'editor-blocks' ); ?></p>
 

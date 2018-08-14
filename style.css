@@ -4,7 +4,7 @@ Theme URI: http://editorblockswp.com/theme-setup
 Author: DannyCooper
 Author URI: https://editorblockswp.com
 Description: Editor Blocks is a minimal WordPress theme designed to work with the new Gutenberg editor. It's fast, responsive and SEO-optimized. It features full width and no sidebar templates. Also, it works perfectly with other page builders such as Beaver Builder and Elementor. Demo: https://editorblockswp.com/demo/
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 Text Domain: editor-blocks
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -921,6 +921,7 @@ a:active {
 
 .post-navigation,
 .posts-navigation {
+	margin-top: 25px;
 	margin-bottom: 25px;
 }
 
@@ -1412,12 +1413,6 @@ object {
 	    margin-right: auto;
 	}
 
-}
-
-.post-template-full-width .wp-block-editor-blocks-wrapper,
-.page-template-default .wp-block-editor-blocks-wrapper {
-	max-width: 100%;
-	position: relative;
 }
 
 .wp-block-editor-blocks-vertical-feature .vertical-feature__subheading,

@@ -3,7 +3,7 @@
 Contributors: DannyCooper
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.0
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/editorblocks/editor-blocks-theme
@@ -32,13 +32,16 @@ Editor Blocks includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0.2 - April 18 2018 =
+= 1.0.3 - August 14 2018 =
+* Minor CSS fix
+
+= 1.0.2 - August 13 2018 =
 * Fix Theme URI
 
-= 1.0.1 - April 17 2018 =
+= 1.0.1 - August 13 2018 =
 * Fix screenshot
 
-= 1.0.0 - April 17 2018 =
+= 1.0.0 - August 12 2018 =
 * Initial release
 
 == Credits ==
