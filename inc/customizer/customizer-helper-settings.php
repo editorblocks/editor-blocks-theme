@@ -93,15 +93,6 @@ function customizer_helper_settings() {
 		'priority' => 14,
 	);
 
-	$settings['navigation-bg-color'] = array(
-		'section'  => 'colors',
-		'id'       => 'navigation-bg-color',
-		'label'    => esc_html__( 'Navigation Color', 'editor-blocks' ),
-		'type'     => 'color',
-		'priority' => 41,
-		'default'  => '#253e80',
-	);
-
 	// Adds the panels to the $settings array.
 	$settings['panels'] = $panels;
 

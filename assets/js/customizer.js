@@ -11,7 +11,6 @@
  */
 
 ( function( $ ) {
-
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
@@ -29,18 +28,18 @@
 		value.bind( function( to ) {
 			if ( 'blank' === to ) {
 				$( '.site-title a, .site-description' ).css( {
-					'clip': 'rect(1px, 1px, 1px, 1px)',
-					'position': 'absolute'
+					clip: 'rect(1px, 1px, 1px, 1px)',
+					position: 'absolute',
 				} );
 			} else {
 				$( '.site-title a, .site-description' ).css( {
-					'clip': 'auto',
-					'position': 'relative'
+					clip: 'auto',
+					position: 'relative',
 				} );
 				$( '.site-title a' ).css( {
-					'color': to
+					color: to,
 				} );
 			}
 		} );
 	} );
-} )( jQuery );
+}( jQuery ) );

@@ -43,27 +43,38 @@ if ( ! function_exists( 'editor_blocks_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary Menu', 'editor-blocks' ),
-		) );
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary Menu', 'editor-blocks' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'editor_blocks_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'editor_blocks_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -75,13 +86,16 @@ if ( ! function_exists( 'editor_blocks_setup' ) ) :
 		add_editor_style( '/assets/css/editor-style.css' );
 
 		// Add support for custom logo.
-		add_theme_support( 'custom-logo', array(
-			'height'      => 100,
-			'width'       => 400,
-			'flex-height' => true,
-			'flex-width'  => true,
-			'header-text' => array( 'site-title', 'site-description' ),
-		) );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 100,
+				'width'       => 400,
+				'flex-height' => true,
+				'flex-width'  => true,
+				'header-text' => array( 'site-title', 'site-description' ),
+			)
+		);
 
 		// Add support for WooCommerce.
 		add_theme_support( 'woocommerce' );
@@ -111,15 +125,17 @@ add_action( 'after_setup_theme', 'editor_blocks_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function editor_blocks_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'editor-blocks' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'editor-blocks' ),
-		'before_widget' => '<section class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'editor-blocks' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'editor-blocks' ),
+			'before_widget' => '<section class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
 add_action( 'widgets_init', 'editor_blocks_widgets_init' );
 

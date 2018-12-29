@@ -3,7 +3,7 @@
 Contributors: DannyCooper
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.3
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/editorblocks/editor-blocks-theme
@@ -31,6 +31,15 @@ Editor Blocks is a minimal WordPress theme designed to work with the new Gutenbe
 Editor Blocks includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.6 - December 29 2018 =
+* Fix .entry-title on pages.
+
+= 1.0.5 - August 27 2018 =
+* Update screenshot
+
+= 1.0.4 - August 21 2018 =
+* Remove navigation background setting
 
 = 1.0.3 - August 14 2018 =
 * Minor CSS fix

@@ -55,29 +55,3 @@ function editor_blocks_brightness( $hex, $steps ) {
 
 	return sanitize_hex_color( $return );
 }
-
-/**
- * Output the Customizer CSS to wp_head
- */
-function editor_blocks_customizer_css() {
-
-	$bg_color = get_theme_mod( 'navigation-bg-color' );
-
-	?>
-	<style>
-	.menu-1 {
-		background-color: <?php echo sanitize_hex_color( $bg_color ); // WPCS: XSS ok. ?>;
-	}
-	.menu-1 li:hover, .menu-1 li.focus {
-		background-color: <?php echo editor_blocks_brightness( $bg_color, -25 ); // WPCS: XSS ok. ?>;
-	}
-	.menu-1 ul ul li {
-		background-color: <?php echo editor_blocks_brightness( $bg_color, -50 ); // WPCS: XSS ok. ?>;
-	}
-	.menu-1 .sub-menu li:hover {
-		background-color: <?php echo editor_blocks_brightness( $bg_color, -75 ); // WPCS: XSS ok. ?>;
-	}
-	</style>
-	<?php
-}
-add_action( 'wp_head', 'editor_blocks_customizer_css' );
