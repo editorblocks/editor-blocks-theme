@@ -23,7 +23,7 @@
 				<?php
 				// translators: %1$s: theme name.
 				// translators: %2$s: theme author.
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'editor-blocks' ), '<a href="https://editorblockswp.com">Editor Blocks</a>', 'Danny Cooper' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'editor-blocks' ), '<a href="https://olympusthemes.com/themes/editor-blocks/">Editor Blocks</a>', 'Danny Cooper' );
 				?>
 
 			</div><!-- .site-info -->

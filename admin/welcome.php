@@ -89,7 +89,7 @@ class Editor_Blocks_Theme_Welcome {
 			'activate-plugin_editor-blocks/plugin.php'
 		);
 
-			?>
+		?>
 			<div class="eb-wrap">
 				<div class="eb-sidebar">
 					<div class="eb-sidebar__header">

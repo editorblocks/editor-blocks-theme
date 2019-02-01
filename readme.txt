@@ -3,7 +3,7 @@
 Contributors: DannyCooper
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/editorblocks/editor-blocks-theme
@@ -16,7 +16,7 @@ Editor Blocks is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Editor Blocks is a minimal WordPress theme designed to work with the new Gutenberg editor. It's fast, responsive and SEO-optimized. It features full width and no sidebar templates. Also, it works perfectly with other page builders such as Beaver Builder and Elementor.
+Editor Blocks is a minimal WordPress theme designed to work with the new Gutenberg editor. It's fast, responsive and SEO-optimized. It features 'Full Width' and 'No Sidebar' templates. Also, it works perfectly with other page builders such as Beaver Builder and Elementor.
 
 == Installation ==
 
@@ -31,6 +31,10 @@ Editor Blocks is a minimal WordPress theme designed to work with the new Gutenbe
 Editor Blocks includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.7 - January 2 2019 =
+* Fix footer credits.
+* Update theme description.
 
 = 1.0.6 - December 29 2018 =
 * Fix .entry-title on pages.
