@@ -45,28 +45,6 @@ class Editor_Blocks_Theme_Welcome {
 	 */
 	public function create_admin_page() {
 
-		$gb_install_url = wp_nonce_url(
-			add_query_arg(
-				array(
-					'action' => 'install-plugin',
-					'plugin' => 'gutenberg',
-				),
-				admin_url( 'update.php' )
-			),
-			'install-plugin_gutenberg'
-		);
-
-		$gb_activate_url = wp_nonce_url(
-			add_query_arg(
-				array(
-					'action' => 'activate',
-					'plugin' => 'gutenberg/gutenberg.php',
-				),
-				admin_url( 'plugins.php' )
-			),
-			'activate-plugin_gutenberg/gutenberg.php'
-		);
-
 		$eb_install_url = wp_nonce_url(
 			add_query_arg(
 				array(
@@ -97,25 +75,11 @@ class Editor_Blocks_Theme_Welcome {
 					</div>
 					<div class="eb-sidebar__inner">
 						<div class="eb-sidebar__plugin">
-							<h3><?php esc_html_e( 'Gutenberg Editor', 'editor-blocks' ); ?></h3>
-							<p><?php esc_html_e( 'This theme is optimized for the Gutenberg editor.', 'editor-blocks' ); ?></p>
-							<?php
-							if ( function_exists( 'gutenberg_init' ) ) {
-								echo '<strong>&#10004; ' . esc_html__( 'Gutenberg is active.', 'editor-blocks' ) . '</strong>';
-							} elseif ( array_key_exists( 'gutenberg/gutenberg.php', get_plugins() ) && ! is_plugin_active( 'gutenberg/gutenberg.php' ) ) {
-								echo '<a class="eb-button" href="' . esc_url( $gb_activate_url ) . '">' . esc_html__( 'Activate Gutenberg', 'editor-blocks' ) . '</a>';
-							} else {
-								echo '<a class="eb-button" href="' . esc_url( $gb_install_url ) . '">' . esc_html__( 'Install Gutenberg', 'editor-blocks' ) . '</a>';
-							}
-							?>
-						</div>
-						<hr>
-						<div class="eb-sidebar__plugin">
 							<h3><?php esc_html_e( 'Editor Blocks Plugin', 'editor-blocks' ); ?></h3>
 							<p><?php esc_html_e( 'We\'ve built a companion theme to display Editor Blocks in the most beautiful way.', 'editor-blocks' ); ?></p>
 							<?php
 							if ( function_exists( 'editor_blocks_assets' ) ) {
-								echo '<strong>&#10004; ' . esc_html__( 'Editor Blocks Plugin is active.', 'editor-blocks' ) . '</strong>';
+								echo '<strong>&#10004; ' . esc_html__( 'Plugin is active.', 'editor-blocks' ) . '</strong>';
 							} elseif ( array_key_exists( 'editor-blocks/plugin.php', get_plugins() ) && ! is_plugin_active( 'editor-blocks/plugin.php' ) ) {
 								echo '<a class="eb-button" href="' . esc_url( $eb_activate_url ) . '">' . esc_html__( 'Activate Plugin', 'editor-blocks' ) . '</a>';
 							} else {
@@ -172,7 +136,7 @@ class Editor_Blocks_Theme_Welcome {
 
 						<a target="_blank" href="<?php echo esc_url( $image_src . 'insert2.gif' ); ?>"><img src="<?php echo esc_url( $image_src . 'insert2.gif' ); ?>" /></a>
 
-						<p class="eb-tip"><?php esc_html_e( 'Quick Tip: The \'Wrapper\' block allows you to place any other block inside it. That means you can easily add a background, padding and margins to any block.', 'editor-blocks' ); ?></p>
+						<p class="eb-tip"><?php esc_html_e( 'Quick Tip: The \'Wrapper\' block allows you to place any other block inside of it. That means you can easily add a background, padding and margins to any block.', 'editor-blocks' ); ?></p>
 					</div>
 				</div>
 				<div class="eb-blocks">

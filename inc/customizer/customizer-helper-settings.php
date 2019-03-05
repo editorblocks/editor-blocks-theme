@@ -39,7 +39,7 @@ function customizer_helper_settings() {
 		'section'  => $section,
 		'type'     => 'number',
 		'priority' => 1,
-		'default'  => 173,
+		'default'  => '',
 	);
 
 	$settings['header-background-repeat'] = array(

@@ -16,10 +16,12 @@
 		</button>
 
 		<?php
-		wp_nav_menu( array(
-			'theme_location' => 'menu-1',
-			'menu_id'        => 'site-menu',
-		) );
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'site-menu',
+			)
+		);
 		?>
 	</div><!-- .wrapper -->
 </nav><!-- .menu-1 -->

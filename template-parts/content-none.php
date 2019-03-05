@@ -21,12 +21,18 @@
 
 			<p>
 				<?php
-				/* translators: %s: link to new post admin screen */
-				printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'editor-blocks' ), array(
-					'a' => array(
-						'href' => array(),
+				printf(
+					wp_kses(
+						/* translators: %s: link to new post admin screen */
+						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'editor-blocks' ),
+						array(
+							'a' => array(
+								'href' => array(),
+							),
+						)
 					),
-				) ), esc_url( admin_url( 'post-new.php' ) ) );
+					esc_url( admin_url( 'post-new.php' ) )
+				);
 				?>
 			</p>
 

@@ -64,8 +64,8 @@ function editor_blocks_register_required_plugins() {
 			'required' => false,
 		),
 		array(
-			'name'     => 'Gutenberg',
-			'slug'     => 'gutenberg',
+			'name'     => 'Google Fonts for WordPress',
+			'slug'     => 'olympus-google-fonts',
 			'required' => false,
 		),
 	);

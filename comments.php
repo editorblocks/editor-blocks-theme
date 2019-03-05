@@ -29,19 +29,21 @@ if ( post_password_required() ) {
 				$comments_number = get_comments_number();
 			if ( '1' === $comments_number ) {
 				// translators: %s: post title.
-				printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'editor-blocks' ), get_the_title() );
+				printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'editor-blocks' ), wp_kses_post( get_the_title() ) );
 			} else {
 				printf(
-					/* translators: 1: number of comments, 2: post title */
-					esc_html( _nx(
-						'%1$s Reply to &ldquo;%2$s&rdquo;',
-						'%1$s Replies to &ldquo;%2$s&rdquo;',
-						$comments_number,
-						'comments title',
-						'editor-blocks'
-					) ),
+					esc_html(
+						/* translators: 1: number of comments, 2: post title */
+						_nx(
+							'%1$s Reply to &ldquo;%2$s&rdquo;',
+							'%1$s Replies to &ldquo;%2$s&rdquo;',
+							$comments_number,
+							'comments title',
+							'editor-blocks'
+						)
+					),
 					esc_html( number_format_i18n( $comments_number ) ),
-					get_the_title()
+					wp_kses_post( get_the_title() )
 				);
 			}
 			?>
@@ -69,17 +71,14 @@ if ( post_password_required() ) {
 		<?php endif; // Check for comment navigation. ?>
 
 		<?php if ( ! comments_open() ) : // If comments are closed and there are comments, output a message? ?>
-
 			<p class="no-comments">
 				<?php esc_html_e( 'Comments are closed.', 'editor-blocks' ); ?>
 			</p>
-
-		<?php
+			<?php
 		endif;
 
 	endif; // Check for have_comments().
 
 	comment_form();
-	?>
-
+?>
 </div><!-- #comments -->
